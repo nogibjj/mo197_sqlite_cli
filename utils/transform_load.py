@@ -1,3 +1,5 @@
+""" This module is responsible for loading the dataset into the database."""
+
 import sqlite3
 
 # import csv
@@ -9,6 +11,9 @@ from glob import glob
 
 
 def load():
+    """
+    This function loads the dataset into the database.
+    """
     dataset_files = glob("datasets/*.csv")
     if not dataset_files:
         print("No CSV files found in the 'datasets' folder.")

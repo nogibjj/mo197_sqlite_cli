@@ -1,8 +1,13 @@
+""" This script copies the latest CSV file from the 'Downloads' folder to the 'datasets' folder."""
 import os
 import shutil
 
 
 def copy_latest_csv_to_datasets():
+    """
+    the latest CSV file from the 'Downloads' folder to the 'datasets' folder is copied
+
+    """
     current_directory = os.path.abspath(os.path.dirname(__file__))
 
     datasets_dir = os.path.join(current_directory, "..", "datasets")
